@@ -18,27 +18,45 @@ Once the project moves into development, the press release can be used as a touc
  
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
+  > 
+  > Book Tracker
 
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > 
+  > A way to let paperback readers track there progress on books they are reading.
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > 
+  > This App will allow you to keep track of the books your reading, what page your on, how many pages you have to go! and if you are hitting your reading deadlines. 
 
 ## Problem ##
   > Describe the problem your product solves.
+  > 
+  > Paperback readers need a way to track thier progress on reading books. In the same way the e-readers do.
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
+  > 
+  > Simple input of current page on book will track progress and provide info on your progress.
 
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+  > 
+  > "Paperback book readers now have a way to track books!"
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
+  > 
+  > Its as easy as adding a book and updating current page.
 
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > 
+  > "Much easier than my spreadsheet"
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+  > 
+  > "Add a book and start reading!"
