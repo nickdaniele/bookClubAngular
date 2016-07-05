@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html ng-app>
-<head>
-  <title>Book Tracker</title>
-</head>
-<body>
-<h1>{{'This is a test'}}</h1>
+<html><!--Need to link main module when there-->
+  <head>
+    <title>Book Tracker</title>
+  </head>
+  <body>
+  <div ng-app="searchModule" ng-controller="searchController as search">
+    <h1>{{ header }}</h1>
+  </div>
 
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-<script src="../bower_components/angular/angular.min.js"></script>
-</body>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <script src="main.js"></script>
+  </body>
 </html>
