@@ -23,10 +23,13 @@ angular.module('searchModule', [])
           console.log('Error Getting Data');
         });
     };
-    return { makeRequest: makeRequest };
+    return { makeRequest: makeRequest};
   })
 
   .controller('searchController', function($scope, searchFactory) {
+    $scope.initial = 'Book';
+    $scope.media = ['Book', 'Movie', 'Musician'];
+    console.log($scope.media);
     $scope.userReq = function() {
       var reqString = '';
       if ($scope.text) {
@@ -37,18 +40,9 @@ angular.module('searchModule', [])
     };
   });
 
-
-  // Actually didn't need
-  // This is done to keep $scope correctly linked
-  // setTimeout(function() {
-  //   $scope.apiResponse = apiResponse;
-  //   $scope.$apply();
-  // }, 50);
-
-// response.data.items
-// response.data.items[0]
-//   - volumeInfo
-//     - .title
-//     - .authors[0]
-//     - .imagelinks.thumbnail
-//     - .pagecount
+ // http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=cher&api_key=0584fe544d1fcd0f53fd65f03ef87ea0&format=json
+ // Here are the details of your new API account.
+ // Application name music Search
+ // API key  0584fe544d1fcd0f53fd65f03ef87ea0
+ // Shared secret  d003c6235bea1dac7e4584beb8ceb1ce
+ // Registered to  NDGmss
