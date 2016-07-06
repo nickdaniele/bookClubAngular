@@ -2,25 +2,28 @@
 <html><!--Need to link main module when there-->
   <head>
     <title>Book Tracker</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
-  <body>
-  <div ng-app="searchModule">
-    <h1>Search</h1>
-    <div ng-controller="searchController">
-      <form ng-submit="userReq()">
-        <input type="text" ng-model="text" name="text" placeholder="Title or Author">
-        <input type="submit" id="submit", value="Submit"></input>
-      </form>  
-  <!--     <div ng-repeat="model in collection track by model.id">
-        {{model.name}}
-      </div> -->
-      {{apiResponse}}
+    <body>
+    <div ng-app="searchModule">
+      <h1>Book Search</h1>
+      <div ng-controller="searchController">
+        <form ng-submit="userReq()">
+          <input type="text" ng-model="text" name="text" placeholder="Title or Author">
+          <input type="submit" id="submit", value="Submit"></input>
+        </form>  
+        <div ng-repeat="book in apiResponse track by $index">
+            <h3>{{ book.title }}</h3>
+            <img id="bookPicture" ng-src="{{ book.imageLinks.thumbnail }}">
+            <p>Author: {{ book.authors[0] }}</p>
+            <p>Pages: {{ book.pageCount }}</p>
+            <p>Description:</br>{{ book.description }}</p>   
+        </div>
+      </div>
     </div>
-  </div>
 
-  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="../bower_components/angular/angular.min.js"></script>
-  <script src="main.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
-
